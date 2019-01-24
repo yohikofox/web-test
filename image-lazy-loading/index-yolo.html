@@ -28,7 +28,7 @@
 }
 </style>
 
- <!-- <script type="text/javascript">
+ <script type="text/javascript">
     
     (function(window, undefined){
 
@@ -44,14 +44,12 @@
                 var srcValue = element.dataset.src;
                 element.setAttribute('src', srcValue);
                 element.removeAttribute('data-src');
-            },function(){
-                $(".owl-carousel").owlCarousel();
             });
         };
 
         var imageToPreLoad = [];
 
-        imageToPreLoad.push(...imageToPreLoad,'https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/01/Xiaomi-Foldable-Phone.jpg' )
+        imageToPreLoad.push(...imageToPreLoad,'images/pliable.png' )
 
         imageToPreLoad.forEach(imageLink=> {
             var img = new Image();
@@ -61,13 +59,14 @@
         document.addEventListener('DOMContentLoaded', function(){
             console.log('DOM Loaded - Execute bootstrap script ...')
 
-            setTimeout(window.seo.LoadImage, 5000); // je te met un délais pour le voir venir ^^
+            // setTimeout(window.seo.LoadImage, 5000); // je te met un délais pour le voir venir ^^
+            window.seo.LoadImage();
             
         }, false);
 
     })(window, undefined)
 
-    </script> -->
+    </script>
 
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="30">
@@ -77,7 +76,7 @@
                 <div class="col-md-12">
                     <nav class="navbar navbar-dark navbar-expand-lg">
 						<div itemscope itemtype="http://schema.org/Organization">
-                        <a class="navbar-brand" itemprop="url" href="https://smartphones-pliables.org/"><img itemprop="logo"  src="https://smartphones-pliables.org/images/logo.png" class="img-fluid" alt="logo smartphone pliable"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <a class="navbar-brand" itemprop="url" href="https://smartphones-pliables.org/"><img itemprop="logo"  data-src="https://smartphones-pliables.org/images/logo.png" class="img-fluid" alt="logo smartphone pliable"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                         </div>
 						<div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
@@ -108,12 +107,12 @@
             <h1>Samsung Galaxy F : Le smartphone pliable</h1>
             <p class="tagline">Pour la première fois sur un smartphone, l'écran tactile se voit doté d'une possibilité d'être plié en deux. Il peut ainsi s'adapter au format tablette ou smartphone tout en gardant une qualité incroyable en mode pliable ou non.</p>
         <small>Article en pré-commande, livraison prévue à partir de Février - Mars 2019</small></div>
-        <div class="img-holder mt-3"><img src="images/pliable.png" alt="smartphone pliable" class="img-fluid"></div>
+        <div class="img-holder mt-3"><img data-src="images/pliable.png" alt="smartphone pliable" class="img-fluid"></div>
     </header>
 
     <div class="client-logos my-5">
         <div class="container text-center">
-            <img src="images/client-logos.png" alt="client logos" class="img-fluid">
+            <img data-src="images/client-logos.png" alt="client logos" class="img-fluid">
         </div>
     </div>
 
@@ -187,7 +186,7 @@
                 </div>
             </div>
             <div class="perspective-phone">
-                <img src="images/perspective.png" alt="perspective phone" class="img-fluid">
+                <img data-src="images/perspective.png" alt="perspective phone" class="img-fluid">
             </div>
         </div>
 
@@ -263,12 +262,12 @@
                 </div>
 
                         </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <img data-srcsrc="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                     </div>
                 </div>
 				                <div class="tab-pane fade" id="smartphonepliable">
                     <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <img data-srcsrc="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                         <div>
 
                             <h2>Ecran smartphone pliable et l'infinity flex</h2>
@@ -296,7 +295,7 @@ Contrairement aux écrans réfléchissants des autres tablettes et smartphones, 
                 </div>
                 <div class="tab-pane fade" id="camera">
                     <div class="d-flex flex-column flex-lg-row">
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <img data-src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                         <div>
                             <h2>Prenez des photos criantes de réalismes</h2>
                             <p class="lead">Le meilleur appareil photo de sa génération 2019</p>
@@ -328,7 +327,7 @@ Contrairement aux écrans réfléchissants des autres tablettes et smartphones, 
 							<p>Autonomie idéale pour tout nomade qui se respecte avec sa technologie Pliable BoostMaster qui vous permet de le recharger en un temps record : 15 minutes de rechargement pour prolonge la durée de la batterie. L'IA ajuste en temps réel le taux de chargement, ce qui permet de ralentir le processus de vieillissement de la batterie.</p>
                            
                         </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <img data-src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                     </div>
                 </div>
 				<div class="tab-pane fade" id="dimension">
@@ -341,7 +340,7 @@ Pour Android, celui-ci serait revisité pour s’adapter à ce nouveau média, e
 Samsung parle de centaines de milliers d’ouvertures, mais combien de fois par jour consultons-nous un mobile ? Qu’est-ce que cela représenterait en termes de mois d’utilisation ? Nous avons pensez à tout ! 
 							</p>
                         </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <img data-src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                     </div>
                 </div>
 				<div class="tab-pane fade" id="resume">
@@ -357,7 +356,7 @@ Côté capacité on est sur un stockage de 128 GB à 256 GB. Vous l’aurez comp
 Parfois il est bon de choisir la nouveauté et la technologie, même si celui-ci s’avère plus coûteux à l’achat. <br>En effet ce choix vous en coûtera 2000 euros ! Correspondant à la catégorie des smartphones et phablette , le samsung galaxy F garantit des performances et un confort d'utilisation inégalé. 
 Ses coloris reste toujours le BLeu Corail, l'ultra violet, et le noir carbone ce qui le rend facilement adaptable à votre environnement.</p>
                         </div>
-                        <img src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
+                        <img data-src="images/graphic.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                     </div>
                 </div>
             </div>
@@ -372,7 +371,7 @@ Ses coloris reste toujours le BLeu Corail, l'ultra violet, et le noir carbone ce
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                    <img data-src="images/dualphone.png" alt="dual phone" class="img-fluid">
                 </div>
                 <div class="col-md-6 d-flex align-items-center">
                     <div>
@@ -422,7 +421,7 @@ Ses coloris reste toujours le BLeu Corail, l'ultra violet, et le noir carbone ce
                     </ul>
                 </div>
                 <div class="col-md-4">
-                    <img src="images/pliable.png" alt="smartphone pliable" class="img-fluid">
+                    <img data-src="images/pliable.png" alt="smartphone pliable" class="img-fluid">
                 </div>
 
             </div>
@@ -481,28 +480,28 @@ Ses coloris reste toujours le BLeu Corail, l'ultra violet, et le noir carbone ce
 			</p><form method="POST" target="_blank" action="https://www.presse-citron.net/xiaomi-presente-un-prototype-de-smartphone-pliable-qui-se-plie-en-trois/">
 <input class="btn btn-primary" target="_blank" type="submit" name="source" value="Source" >
 </form></small>
-			<small><img src="https://img.bfmtv.com/c/0/708/794/8776c03829f11946ef2529d918038.png" alt="Xiaomi dévoile son smartphone pliable"/><br><h4>Xiaomi dévoile son prototype de smartphone "pliable" [Vidéo]</h4><p>Les écrans de smartphones pliables semblent devenir un nouveau terrain de jeu (voir un enjeu) pour les fabricants. Ainsi, après Royole qui ouvrait son Flexpai au CES et Samsung, Xiaomi dévoile à son tour, un projet de smartphone pliable.
+			<small><img data-src="https://img.bfmtv.com/c/0/708/794/8776c03829f11946ef2529d918038.png" alt="Xiaomi dévoile son smartphone pliable"/><br><h4>Xiaomi dévoile son prototype de smartphone "pliable" [Vidéo]</h4><p>Les écrans de smartphones pliables semblent devenir un nouveau terrain de jeu (voir un enjeu) pour les fabricants. Ainsi, après Royole qui ouvrait son Flexpai au CES et Samsung, Xiaomi dévoile à son tour, un projet de smartphone pliable.
 			<time datetime="January 23, 2019 11:25">Publié le 23/01/19</time>
 			</p><form method="POST" target="_blank" action="https://www.mac4ever.com/actu/140529_xiaomi-devoile-son-prototype-de-smartphone-pliable-video">
 <input class="btn btn-primary" target="_blank" type="submit" name="source" value="Source" >
 </form></small>
 			
-			<small><img src="https://pic.clubic.com/v1/images/1697522/raw?width=1200&fit=max&hash=b867cfb25cc290b28ea33ca388283ec57eed2ba4" alt="Smartphone pliable de Samsung"/><br><h4>Ça pique ! Le smartphone pliable de Samsung serait vendu à plus de 2 000 €</h4><p>Alors que nous attendons toujours des détails officiels de Samsung concernant son terminal pliable, diverses sources s'accordent pour attribuer au prétendu Galaxy Fold la plus grosse étiquette tarifaire jamais vue jusqu'à présent pour la marque.
+			<small><img data-src="https://pic.clubic.com/v1/images/1697522/raw?width=1200&fit=max&hash=b867cfb25cc290b28ea33ca388283ec57eed2ba4" alt="Smartphone pliable de Samsung"/><br><h4>Ça pique ! Le smartphone pliable de Samsung serait vendu à plus de 2 000 €</h4><p>Alors que nous attendons toujours des détails officiels de Samsung concernant son terminal pliable, diverses sources s'accordent pour attribuer au prétendu Galaxy Fold la plus grosse étiquette tarifaire jamais vue jusqu'à présent pour la marque.
 			<time datetime="January 22, 2019">Publié le 22/01/19</time>
 			</p><form method="POST" target="_blank" action="https://www.clubic.com/smartphone/android/actualite-849901-pique-smartphone-pliable-samsung-vendu-2000.html">
 <input class="btn btn-primary" target="_blank" type="submit" name="source" value="Source" >
 </form></small>
-                <small><img src="https://www.erenumerique.fr/wp-content/uploads/2018/01/samsung-galaxy-x.jpg" alt="Samsung Galaxy X : prix, date de sortie" /><br><h4>Technologie Les prix des Samsung Galaxy S10 et du Galaxy F, le smartphone pliable, ont fuité</h4><p>Les Samsung Galaxy S10 E, Galaxy S10 et Galaxy S10+ devraient être présentés en févier et vendu dès le mois de mars en Italie. C’est un site italien qui a dévoilé les prix de ces trois modèles entre 780 et 1600 euros. Le Galaxy F, un smartphone pliable, lui coûterait encore plus cher et pourrait sortir en avril. 
+                <small><img data-src="https://www.erenumerique.fr/wp-content/uploads/2018/01/samsung-galaxy-x.jpg" alt="Samsung Galaxy X : prix, date de sortie" /><br><h4>Technologie Les prix des Samsung Galaxy S10 et du Galaxy F, le smartphone pliable, ont fuité</h4><p>Les Samsung Galaxy S10 E, Galaxy S10 et Galaxy S10+ devraient être présentés en févier et vendu dès le mois de mars en Italie. C’est un site italien qui a dévoilé les prix de ces trois modèles entre 780 et 1600 euros. Le Galaxy F, un smartphone pliable, lui coûterait encore plus cher et pourrait sortir en avril. 
 			<time datetime="January 22, 2019 09:43">Publié le 22/01/19</time>
 			</p><form method="POST" target="_blank" action="https://lavdn.lavoixdunord.fr/525703/article/2019-01-22/les-prix-des-samsung-galaxy-s10-et-du-galaxy-f-le-smartphone-pliable-ont-fuite">
 <input class="btn btn-primary" target="_blank" type="submit" name="source" value="Source" >
 </form></small>
-               <small><img src="https://img.phonandroid.com/2018/11/galaxy-x-fiche-technique-ecran-pliable-infinity-flex.jpg" alt="Samsung Galaxy X : prix, date de sortie"/><br><h4>Samsung Galaxy X : prix, date de sortie, fiche technique… toutes les infos sur le smartphone pliable</h4><p>Le Samsung Galaxy X est le premier smartphone avec écran pliable de Samsung.  Après des années d’attente, le rêve s’est enfin concrétisé. Découvrez tout ce que vous devez savoir sur le Galaxy X : prix, date de sortie, fiche technique, design, interface
+               <small><img data-src="https://img.phonandroid.com/2018/11/galaxy-x-fiche-technique-ecran-pliable-infinity-flex.jpg" alt="Samsung Galaxy X : prix, date de sortie"/><br><h4>Samsung Galaxy X : prix, date de sortie, fiche technique… toutes les infos sur le smartphone pliable</h4><p>Le Samsung Galaxy X est le premier smartphone avec écran pliable de Samsung.  Après des années d’attente, le rêve s’est enfin concrétisé. Découvrez tout ce que vous devez savoir sur le Galaxy X : prix, date de sortie, fiche technique, design, interface
 			<time datetime="January 22, 2019 12:00">Publié le 22/01/19 à 12h00</time>
 			</p><form method="POST" target="_blank" action="https://www.phonandroid.com/samsung-galaxy-x-prix-date-sortie-fiche-technique-toutes-rumeurs-smartphone-pliable.html">
 <input class="btn btn-primary" target="_blank" type="submit" name="source" value="Source" >
 </form></small>
-                <small><img src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/3097/49507/royole-flexpai_6d1f83a05b8ad9e5__450_400.png" alt="royal flexpai"/><br><h4>CES 2019 – Royole FlexPai : premier contact avec le smartphone pliable</h4><p>C'était Samsung qui était attendu, mais c'est finalement Royole qui a été la première marque à présenter un smartphone pliable. L'entreprise chinoise spécialiste des écrans pliables est présente au CES de Las Vegas où nous avons pu prendre en main pour la première fois son FlexPai. Autant le dire d'emblée, nous n'avons pas été enchantés.  
+                <small><img data-src="https://dyw7ncnq1en5l.cloudfront.net/optim/produits/3097/49507/royole-flexpai_6d1f83a05b8ad9e5__450_400.png" alt="royal flexpai"/><br><h4>CES 2019 – Royole FlexPai : premier contact avec le smartphone pliable</h4><p>C'était Samsung qui était attendu, mais c'est finalement Royole qui a été la première marque à présenter un smartphone pliable. L'entreprise chinoise spécialiste des écrans pliables est présente au CES de Las Vegas où nous avons pu prendre en main pour la première fois son FlexPai. Autant le dire d'emblée, nous n'avons pas été enchantés.  
                 <time datetime="January 9, 2019 08:33">Publié le 09/01/19 à 08h33</time><time  datetime="January 9, 2019 19:26"> | Mis à jour le 09/01/19 à 19h26</time>
       			</p><form method="POST" target="_blank" action="https://www.lesnumeriques.com/telephone-portable/royole-flexpai-p49507/ces-2019-royole-flexpai-premier-contact-avec-smartphone-pliable-n82443.html">
 <input class="btn btn-primary" target="_blank" type="submit" name="source" value="Source" >
@@ -525,12 +524,12 @@ Ses coloris reste toujours le BLeu Corail, l'ultra violet, et le noir carbone ce
             </div>
 
             <div class="img-gallery owl-carousel owl-theme">
-			<img src="https://smartphones-pliables.org/images/android-interface-pliable.gif" alt="samsung pliable 2019"/>
-                <img src="https://smartphones-pliables.org/images/samsung-pliable-flex-5.jpg" />
-                <img src="https://smartphones-pliables.org/images/samsung-pliable-flex-2.jpg" alt="samsung galaxy X" />
-                <img src="https://smartphones-pliables.org/images/samsung-pliable-flex-4.jpg" alt="samsung pliable flex 3" />
-                <img src="https://smartphones-pliables.org/images/samsung-pliable-flex-1.jpg" alt="Smartphone pliable flex 4" />
-				<img src="https://smartphones-pliables.org/images/samsung-pliable-flex-3.jpg" alt="samsung pliable flex" />
+			<img data-src="https://smartphones-pliables.org/images/android-interface-pliable.gif" alt="samsung pliable 2019"/>
+                <img data-src="https://smartphones-pliables.org/images/samsung-pliable-flex-5.jpg" />
+                <img data-src="https://smartphones-pliables.org/images/samsung-pliable-flex-2.jpg" alt="samsung galaxy X" />
+                <img data-src="https://smartphones-pliables.org/images/samsung-pliable-flex-4.jpg" alt="samsung pliable flex 3" />
+                <img data-src="https://smartphones-pliables.org/images/samsung-pliable-flex-1.jpg" alt="Smartphone pliable flex 4" />
+				<img data-src="https://smartphones-pliables.org/images/samsung-pliable-flex-3.jpg" alt="samsung pliable flex" />
 </div>
 
         </div>
@@ -552,7 +551,7 @@ Ses coloris reste toujours le BLeu Corail, l'ultra violet, et le noir carbone ce
 
             <div class="testimonials owl-carousel">
                 <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
+                    <img data-src="images/client.png" alt="client" class="client-img">
                     <blockquote class="blockquote"><span data-hook="review-date">22 décembre 2018</span> | Venant d'un iphone 5 qui avait plus 8 ans de bon et loyaux services, j'hésitais à passer de i OS vers android. Franchement je ne sui pas déçus, il suffit juste de sauvegarder son ancien iphone sur le cloud et on utilise l’appli samnung smart switch, grâce a quoi on peut quasiment récupérer tous le contenu de son tel.
 Le Galaxy F est vraiment bluffant :
 -écran pliable superbe
@@ -564,7 +563,7 @@ Bref très bon achat</blockquote>
                     <p class="text-primary">Paris</p>
                 </div>
                 <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
+                    <img data-src="images/client.png" alt="client" class="client-img">
                     <span class="blockquote"><span data-hook="review-date">3 janvier 2019</span> | Ayant acheté une version du smartphone pliable internationale je m'attendais a recevoir le telephone en anglais. et non en hongrois... et avec la possibillité de mettre des cartes sims du monde entier et pas "European Sim Card Only".
 le telephone a fait un drole de truc au démarrage et a demandé a supprimer toutes les anciennes données du téléphone car il a détécté une nouvelle carte sim.... de plus il n'est pas sous blister... mais comme nous avons eu un probleme avec le livreur, impossible a dire quel est le probleme s'il y en a un...
 sinon apres allumage tout semble normal</span>
@@ -572,32 +571,32 @@ sinon apres allumage tout semble normal</span>
                     <p class="text-primary">Rennes</p>
                 </div>
 				                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
+                    <img data-src="images/client.png" alt="client" class="client-img">
                     <blockquote class="blockquote"><span data-hook="review-date">10 novembre 2018</span> | J'ai acheté mon galaxy F datant de 2 mois déjà livraison très rapide soigner et sceller produit neuf je l'ai pris avec le vendeur A-montain, j'ai pris la version allemande j'ai mis ma puce et allumé il s'est mis automatiquement en français et a fait tous les mises à jour qu'il fallait et j'ai appelé une personne plus de 5 minutes pour débloquer le téléphone après de nombreux mise à jour et utilisation de l'écran pliable et un produit de super qualité ergonomie écran incurvé au top vraiment rien à dire un bijou pour de nombreuses années en plus du prix je vous le conseille, bien vérifié les avis des clients et le bon vendeur comme celui que j'ai cité il est opérationnel et allez-y l'esprit tranquille expérience approuver et valider</blockquote>
                     <h5 class="mt-4 mb-2">Client Smartphone pliable</h5>
                     <p class="text-primary">Colmar</p>
                 </div>
 								                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
+                    <img data-src="images/client.png" alt="client" class="client-img">
                     <span class="blockquote"><span data-hook="review-date">19 août 2018</span> | Super smartphone ! Puissance, qualité photo... Tout est parfait !</blockquote>
                     <h5 class="mt-4 mb-2">Client Smartphone pliable</h5>
                     <p class="text-primary">France</p>
                 </div>
 												                <div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
+                    <img data-src="images/client.png" alt="client" class="client-img">
                     <span class="blockquote"><span data-hook="review-date">15 janvier 2019</span> | produit conforme R.A.S ! produit au top</blockquote>
                     <h5 class="mt-4 mb-2">Jean</h5>
                     <p class="text-primary">France</p>
                 </div>
 				<div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
+                    <img data-src="images/client.png" alt="client" class="client-img">
                     <span class="blockquote"><span data-hook="review-date">20 janvier 2019</span> | Malgré un petit retard de livraison, reçu deux jours après (ce qui paraît interminable quand on attend un téléphone) très satisfait de ma commande. Le téléphone répond à toutes mes attentes sauf peut être pour ce qui est de la durée de vie de la batterie(un peu moins d'une journée). toujours est il que le rapport qualité prix est imbattable.</span>
                     <h5 class="mt-4 mb-2">Vanessa87</h5>
                     <p class="text-primary">Nice</p>
                 </div>
 				
 				<div class="testimonials-single">
-                    <img src="images/client.png" alt="client" class="client-img">
+                    <img data-src="images/client.png" alt="client" class="client-img">
                     <span class="blockquote"><span data-hook="review-date">23 janvier 2019</span> | Plus facile à tenir que S7, moins large Belle luminosité Mes seuls regrets : la batterie neuve dure moins longtemps que sur le S7 neuf mais se recharge plus vite avec le fast charger - les applis ne gardent pas les identifiants de connexion il faut tout refaire</span>
                     <h5 class="mt-4 mb-2">Anni</h5>
                     <p class="text-primary">Paris</p>
