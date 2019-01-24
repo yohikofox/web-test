@@ -45,10 +45,15 @@
 
         imageToPreLoad.push(...imageToPreLoad,'https://www.presse-citron.net/wordpress_prod/wp-content/uploads/2019/01/Xiaomi-Foldable-Phone.jpg' )
 
+        imageToPreLoad.forEach(imageLink=> {
+            var img = new Image();
+            img.src = imageLink;
+        });
+
         document.addEventListener('DOMContentLoaded', function(){
             console.log('DOM Loaded - Execute bootstrap script ...')
 
-            document.querySelector('button#load-image-button').addEventListener('click',window.seo.LoadImage, false);
+            setTimeout(window.seo.LoadImage, 5000); // je te met un délais pour le voir venir ^^
             
         }, false);
 
